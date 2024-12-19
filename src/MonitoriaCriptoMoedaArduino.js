@@ -3,7 +3,7 @@ const https = require('https');
 const Readline = SerialPort.parsers.Readline;
 
  //const port = new SerialPort("COM3", {
-const port = new SerialPort("/dev/ttyACM0", {
+const port = new SerialPort("/dev/cu.usbmodem101", {
   baudRate: 9600,
 });
 
