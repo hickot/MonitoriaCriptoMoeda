@@ -1,0 +1,25 @@
+2024/12/19-15:58:58.756 a603 Reusing MANIFEST /Users/douglasalvares/Node/MonitoriaCriptoMoeda/src/tokens/api_whatsApp_novoNumero/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2024/12/19-15:58:58.756 a603 Recovering log #36
+2024/12/19-15:58:58.770 a603 Reusing old log /Users/douglasalvares/Node/MonitoriaCriptoMoeda/src/tokens/api_whatsApp_novoNumero/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000036.log 
+2024/12/19-15:58:58.771 a603 Delete type=2 #35
+2024/12/19-15:58:58.771 a603 Delete type=2 #37
+2024/12/19-15:58:59.031 9103 Manual compaction at level-0 from '\x00\x15\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x16\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/12/19-15:58:59.033 9103 Level-0 table #41: started
+2024/12/19-15:58:59.046 9103 Level-0 table #41: 735212 bytes OK
+2024/12/19-15:58:59.050 9103 Delete type=0 #36
+2024/12/19-15:58:59.051 a603 Manual compaction at level-0 from '\x00\x16\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x17\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/12/19-15:58:59.052 a603 Level-0 table #43: started
+2024/12/19-15:58:59.055 a603 Level-0 table #43: 505 bytes OK
+2024/12/19-15:58:59.058 a603 Delete type=0 #40
+2024/12/19-15:58:59.059 a603 Manual compaction at level-0 from '\x00\x17\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x18\x00\x00\x00' @ 0 : 0; will stop at '\x00\x17\x00\x00\x05' @ 83842 : 0
+2024/12/19-15:58:59.059 a603 Compacting 1@0 + 1@1 files
+2024/12/19-15:58:59.068 a603 Generated table #44@0: 19551 keys, 482416 bytes
+2024/12/19-15:58:59.068 a603 Compacted 1@0 + 1@1 files => 482416 bytes
+2024/12/19-15:58:59.073 a603 compacted to: files[ 0 1 1 0 0 0 0 ]
+2024/12/19-15:58:59.073 a603 Delete type=2 #43
+2024/12/19-15:58:59.073 a603 Manual compaction at level-0 from '\x00\x17\x00\x00\x05' @ 83842 : 0 .. '\x00\x18\x00\x00\x00' @ 0 : 0; will stop at (end)
+2024/12/19-15:58:59.554 a603 Compacting 1@1 + 1@2 files
+2024/12/19-15:58:59.571 a603 Generated table #45@1: 18825 keys, 863825 bytes
+2024/12/19-15:58:59.571 a603 Compacted 1@1 + 1@2 files => 863825 bytes
+2024/12/19-15:58:59.577 a603 compacted to: files[ 0 0 1 0 0 0 0 ]
+2024/12/19-15:58:59.577 a603 Delete type=2 #41
