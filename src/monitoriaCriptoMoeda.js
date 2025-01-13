@@ -38,10 +38,6 @@ async function sendRequestWithHeaders() {
     price = response.data['price'];
     console.log("Cotação do Bitcoin: R$ " + formatador.format(price));
 
-    //datetime
-    //cotacao
-    //diferenca
-
     var multiplicacao = price * cotaComprada;
     console.log("Valor final: R$ " + multiplicacao.toLocaleString("pt-BR"));
     var diferenca = price * cotaComprada - amount;
@@ -53,9 +49,6 @@ async function sendRequestWithHeaders() {
     }
     console.log("");
 
-    const agora = new Date();
-    const dataLocalString = agora.toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo' });
-
     const moment = require('moment-timezone');
 
     // Define o fuso horário
@@ -64,19 +57,15 @@ async function sendRequestWithHeaders() {
     // Pega a data e hora atual no fuso horário especificado
     const dataAtual = moment().tz(timezone).format('YYYY-MM-DD HH:mm:ss');
     const time = dataAtual;
-    //const date = dataAtual;
-
-    console.log('datahora: ' + dataLocalString);
-
+    
     //Timezone Africa/Abidjan para a coluna datahora
     const timezoneDataHora = 'Africa/Abidjan';
     const dataAtualDataHora = moment().tz(timezoneDataHora).format('YYYY-MM-DD HH:mm:ss');
     const date= dataAtualDataHora;
-    //console.log('datetime: ' + date);
-
-    const params = [dataLocalString, time, price, diferenca, date];
-
+    const dataLocalString = moment().tz(timezone).format('YYYY-MM-DD HH:mm:ss');
     
+    //Prepara a constante params
+    const params = [dataLocalString, time, price, diferenca, date];    
    
     // Inicia o script filho
     const insertCotacao = spawn('node', ['insertCotacao.js', ...params]);

@@ -94,16 +94,19 @@ async function sendRequestWithHeaders() {
 
 function selectCotacao() {
 
-  const query = 'select cotacao from tbl_bitcoin ORDER BY id DESC limit 1;'; // Substitua "sua_tabela" pelo nome da tabela que deseja consultar.
+  const query = 'select cotacao, diferenca from tbl_bitcoin ORDER BY id DESC limit 1;'; // Substitua "sua_tabela" pelo nome da tabela que deseja consultar.
+  //const query = 'SELECT cotacao, diferenca, datahora FROM tbl_bitcoin ORDER BY id DESC limit 1;'; // Substitua "sua_tabela" pelo nome da tabela que deseja consultar.
 
   client.query(query)
     .then(res => {
       console.log('Resultados:', res.rows); // Exibe os dados retornados
 
       price = res.rows.map(row => row.cotacao);
+      diferenca = res.rows.map(row => row.diferenca);
       //client.end();
 
       console.log("Cotação: R$ " + formatador.format(price));
+      console.log("Diferença: R$ " + formatador.format(diferenca));
 
       texto1 = "";
       texto2 = "";
@@ -115,7 +118,7 @@ function selectCotacao() {
       if (operacao == "vender") {
 
         //var multiplicacao = price * cotaComprada;      
-        var diferenca = price * cotaComprada - amount;
+        //var diferenca = price * cotaComprada - amount;
 
         if (diferenca > 0) {
           console.warn("Lucro: R$ " + formatador.format(diferenca));
