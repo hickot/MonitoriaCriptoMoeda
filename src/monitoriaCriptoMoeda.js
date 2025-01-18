@@ -63,7 +63,7 @@ async function sendRequestWithHeaders() {
     const dataAtualDataHora = moment().tz(timezoneDataHora).format('YYYY-MM-DD HH:mm:ss');
     const date= dataAtualDataHora;
     const dataLocalString = moment().tz(timezone).format('YYYY-MM-DD HH:mm:ss');
-    
+       
     //Prepara a constante params
     const params = [dataLocalString, time, price, diferenca, date];    
    
